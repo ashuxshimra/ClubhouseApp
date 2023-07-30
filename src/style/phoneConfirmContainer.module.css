@@ -1,0 +1,92 @@
+.phoneConfirmContainer{
+    padding: 3em 1.7em;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f0e4;
+    position: relative;
+}
+
+.phoneConfirmContainer h1{
+    font-size: 1.3em;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+    color: var(--textColor);
+}
+
+.phoneConfirmContainer p{
+    font-size: 0.885em;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+/* the below bascially means you are doing styling for the span tag under p tag */
+.phoneConfirmContainer p span{
+font-weight: 700;
+
+}
+
+.backBtn img{
+ width: 20px;
+}
+.backBtn{
+    /* for positioning of buttton */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.notificationContainer{
+    background-color: #ffffff;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px #cccccc;
+    position: relative;
+}
+.notificationContainer h3{
+font-size:1.2em;
+font-weight: 800;
+color: black;
+width: 100%;
+margin: auto;
+margin-bottom: 0.3em;
+}
+.notificationContainer p{
+font-size: 0.825em;
+font-weight: 500;
+line-height: 1.3;
+margin: auto;
+}
+
+.notificationContainer .action_btn{
+position: relative;
+}
+.notificationContainer .action_btn a{
+text-decoration: none;
+display: inline-block;
+width: 50%;
+border-top: 1px solid #cccccc;
+padding: 0.5em;
+color: var(--btnBgColor);
+}
+
+.notificationContainer .action_btn > a:first-child{
+border-right: 1px solid #cccccc;
+}
+
+.notificationContainer .hand_Icon{
+    /* the below positiikoning will work relative to .notification parent container as position relative there and now here do position absolute which will take it out from document flow and now adjust acc */
+     /*earlier the problem was that while minimizing it was moving somewhere and the parent container notificationcontainer was going somewhere so when now mimized evceyrthing will be moved and adjusted relatively  */
+    position: absolute;
+     bottom: -100px;
+     right:  90px;
+     width: 80px;
+     
+     
+}

@@ -1,0 +1,19 @@
+.Header{
+display: flex;
+align-items: center;
+/* the below will give end to end space between inline containers of its container and this is acftivcated using display flex */
+justify-content: space-between;
+padding: 0.5em 1em;
+position: absolute;
+/* when done position and things change then u can use top etc here done this to tell container that its distance from left right top is zero so kinda things are back to their postion and at top */
+top: 0;
+left: 0;
+right: 0;
+background-color: #f2f0e4;
+}
+.Header img {
+    width: 25px;
+}
+.nav_items img{
+margin: 0 0.8em;
+}

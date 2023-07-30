@@ -1,0 +1,54 @@
+.WelcomeContainer{ 
+    /* top left */
+padding: 3cm 1.5cm; 
+font-size: larger;
+display: flex;
+flex-direction: column;
+/* in belowm u have two flex items h1 and div for p tags so when done below it will the first flex item will be aligned to the start of the container, the last flex item will be aligned to the end of the container, and any remaining flex items in between will have equal spacing distributed between them. */
+justify-content: space-between; 
+align-items: flex-start;
+/* now space will come after below btw h1 tag and div since they are space between and heuight needs to be increased */
+height: 100vh; 
+background-color: #f2f0e4;
+}
+
+.WelcomeContainer h1{
+    font-size: 1.7em;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+    color: var(--textColor);
+}
+.WelcomeInfo{
+    height: 253px;
+    overflow: auto;     /* This will bring scroll for this para container as height is 253px so it will be like this when minmised */
+}
+
+.WelcomeInfo p {
+    margin-bottom: 2em;
+    color: var(--textColor);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+
+}
+.actionBtn{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.actionBtn a{
+    text-decoration: none;
+}
+/* here in below for style .actionBtn applied we are selecting the last child that is second Link */
+.actionBtn > a:last-child {
+color: var(--btnBgColor);
+font-size: 0.875em;
+font-weight: 400;
+font-style: normal;
+}
+.wave{
+    width: 59px;
+}

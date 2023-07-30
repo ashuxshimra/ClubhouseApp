@@ -1,0 +1,42 @@
+.dailyCard{
+    background-color: #e7e4d5;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    
+}
+/* the below basically means that you are selecting dirfect div that is one direct child of dailyCard right below where you defined otherwise it would have selected all the grandchildren div of div of div if done dailyCard div  */
+.dailyCard > div{
+display: flex;
+align-items: flex-start;
+margin-bottom: 0.5em;
+
+}
+/* here now grabbing only span tag just after the next div tag one , that is first span tag of first div*/
+.dailyCard > div > span {
+width: 20%;
+text-align: end;
+}
+.dailyCard >div>div{
+margin-left: 0.5em;
+display: flex;
+flex-direction: column;
+width: 80%;
+}
+.dailyCard span{
+    font-size: 0.675em;
+    color: var(--textColor);
+    font-weight: 500;
+}
+.dailyCard p{
+    font-size: 0.875em;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    /* if the text is too long then it will give ...  */
+    text-overflow: ellipsis;
+    width: 195px;
+}
+

@@ -1,0 +1,55 @@
+.home_container{
+padding-top: 3.5em;
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 3.5em;
+overflow: auto;
+height: 100%;
+}
+/* in below u are basically selecting the .action_btn which is of same level that is not coming inside of .homecontainer ,after .homecontainer div over the very next hence a sibling div and in that we are targetting button container , u can related by watching the Hpome.js code */
+/* .home_container + .action_btn: This selects an element with the class "action_btn" that immediately follows an element with the class "home_container." The "+" selector is the adjacent sibling combinator. */
+
+.home_container + .action_btn button{
+background-color: transparent;
+border: none;
+margin-left: auto;
+}
+/*  selecting an SVG element that is a child of a <button> element, which is a sibling of an element with the class "home_container. that is + sign component which u rendered and grid icon  */
+.home_container + .action_btn button svg{
+    font-size: 1.3em;
+}
+.home_container + .action_btn{
+    display: flex;
+    align-items: center;
+    padding: 4em 1.5em 2em 1.5em;
+    /* to make the button appear everytime so grabbing its container and sticking it from all directions */
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image:  linear-gradient(transparent 20%, #f2f0e4 90%) ;
+    
+}
+/* here this ,means that selecting button tag but only the first child that is first button container  */
+.home_container + .action_btn > button:first-child{
+    border-radius: 2em;
+    background-color: #28ae61;
+    color: #ffffff;
+    padding: 0.3em 1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* Moves the left edge of the element to the horizontal midpoint of the container  */
+    left:50%;
+    /* now since left edge of button is at mid of actionbtn container to make button at center we can put the mid of btn to mid of actionbtn container and hence for that translatex -50% */
+    transform: translateX(-50%);
+}
+.home_container + .action_btn > button:nth-child(2){
+line-height: 1;
+}
+.home_container + .action_btn > button:nth-child(2) svg{
+color: var(--textColor);
+}
+    

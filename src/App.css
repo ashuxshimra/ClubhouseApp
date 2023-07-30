@@ -1,0 +1,44 @@
+:root {
+  --textColor: rgb(65, 64, 66);
+  --btnBgColor: #3287b7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* here below done to make sure to remove the styling provided by initial  reacdt app */
+body { 
+margin: 0;
+padding : 0;
+font-size: 1em;
+font-family: "Neutrif Pro";
+}
+/* in below clearing that the button shall not be outlined and its important */
+button {
+  outline: none !important;
+}
+/* there shall be no underline */
+a {
+  text-decoration: none;
+}
+/* now this below will be availabe globally this way of stylingv use */
+.primaryBtn {
+text-decoration: none;
+background-color: var(--btnBgColor);
+color: #ffff;
+padding: 0.5em 1.5em;
+border-radius: 2em;
+font-size: 1em;
+font-weight: 500;
+font-style: normal;
+text-align: center;
+}
+
+.app_layout{
+background-color: #f2f0e4;
+height:100vh;
+position: relative;
+width: 100%;
+/* max-width: 500px; */
+margin: auto;
+}

@@ -1,0 +1,46 @@
+.roomCardContainer{
+background-color: #ffffff;
+padding: 1em 1em;
+border-radius: 1em;
+border: 0.5em;
+margin-top: 0.5em;
+}
+.roomCardContainer h6{
+    font-size: 0.675em;
+    color: var(--textColor);
+    font-weight: 500;
+}
+.roomCardContainer h2{
+    font-size: 0.975em;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+} 
+.roomMembers img{
+    width: 35px;
+    height: 35px;
+    border-radius: 0.6em;
+}
+.roomMembers{
+   display: flex;
+   align-items: flex-start;
+}
+.roomMembers p{
+    font-size: 0.975em;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    color: var(--textColor);
+}
+/* beolow grabbing the very first div's first chiild that is a div next to first div which here is the room members container */
+.roomMembers > div:first-child{
+position: relative;
+/* note to make images upside down as shown you need to know this trick , when done position absolute then it comes on top of the browser but , if in parent div you make position relative then do position absolute for image then it will come on top of parent div contaainer and when done left top 2em  */
+margin-right: 2em;
+}
+.roomMembers > div:first-child > img:nth-child(2) {
+    /* note to make images upside down as shown you need to know this trick , when done position absolute then it comes on top of the browser but , if in parent div you make position relative then do position absolute for image then it will come on top of parent div contaainer and when done left top 2em  */
+    position: absolute;
+    left: 1em;
+    top: 1em;
+}
